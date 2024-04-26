@@ -1,8 +1,7 @@
 <script setup lang="js">
 import { ref, shallowReactive } from 'vue';
-import AudioPlayer from 'vue3-audio-player';
-import 'vue3-audio-player/dist/style.css';
-
+import AudioPlayer from 'vue3-audio-player'
+import 'vue3-audio-player/dist/style.css'
    import {
       VueFlux,
       FluxCaption,
@@ -35,13 +34,14 @@ import 'vue3-audio-player/dist/style.css';
   
   <VueFlux
   class='fullscreen'
+  
       :options="vfOptions"
       :rscs="vfRscs"
       :transitions="vfTransitions"
       ref="$vueFlux">
 
       <template #pagination="paginationProps">
-        <AudioPlayer onblur=""
+        <AudioPlayer
     :option="{
         src: 'https://res.cloudinary.com/dszafqkxs/video/upload/v1714142344/Y2meta.app_-_لحن_ثوك_تي_تي_جوم___لك_القوة_والمجد_اسبوع_الالام_128_kbps_b2fwmj.mp3',
         title: 'ثوك تاتي جوم',
